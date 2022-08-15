@@ -1,0 +1,8 @@
+.outerGridContainer {
+  display: grid;
+  width: 100%;
+  grid-template-rows: 5em 1fr 5em;
+  justify-items: center;
+}
+
+

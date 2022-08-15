@@ -1,0 +1,25 @@
+.newNoteButtonArea {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   place-items: center;
+   user-select: none;
+}
+
+.buttonStyle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 300;
+    background-color: rgba(var(--highlightColor1));
+    font-size: 1.2em;
+    color: white;
+    padding: 0.5em;
+    width: max-content;
+    border: none;
+    border-radius: 0.5em;
+}
+
+.buttonStyle:hover , .buttonStyle:focus{
+    background-color: rgba(var(--highlightColor2));
+    box-shadow: 0 0.5em 1em rgba(var(--highlightColor1),0.5);
+    outline: none;
+}

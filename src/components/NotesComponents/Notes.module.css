@@ -1,0 +1,29 @@
+.innerGrid {
+  position: relative;
+  width: 90%;
+  height: fit-content;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 16em);
+  grid-auto-rows: auto;
+  gap: 1em;
+  justify-items: center;
+  place-content: center;
+}
+
+.noNotesDisclaimer {
+  position: relative;
+  place-content: center;
+  align-self: center;
+  font-size: 3em;
+  text-align: center;
+  transform: translateY(-1em);
+  color: rgba(var(--secondaryColor1),0.4);
+  user-select: none;
+}
+
+@media screen and (max-width: 720px) {
+  .innerGrid {
+    place-content: center;
+  }
+}

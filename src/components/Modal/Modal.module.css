@@ -1,0 +1,132 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    z-index: 10;
+    display: grid;
+}
+
+.popupWindow {
+    position: absolute;
+    place-self: center;
+    z-index: 2;
+
+    width: max(30%, 18em);
+    height: 70%;
+    padding: 1em;
+
+    background-color: rgb(234, 231, 222);
+    border-radius: 16px;
+
+    display: grid;
+    grid-template-rows: 2em 1fr;
+    grid-template-columns: 1fr;
+
+    place-content: center;
+}
+
+.popupWindow > span {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.popupWindow > span > h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color:rgba(43, 40, 40, 0.6)
+}
+
+
+.backdrop {
+    position: absolute;
+    background-color: rgba(43, 40, 40, 0.4);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.form {
+    width: auto;
+    display: grid;
+    grid-template-rows: 4em 2em 1fr 3em;
+    gap: 0.2em;
+}
+
+
+.titleContentOfNote, .labelContentOfNote {
+    padding: 1em;
+    width: auto;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(43, 40, 40, 0.4);
+    outline: none;
+}   
+
+.titleContentOfNote {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    padding: 0.1em 0.1em 0.1em 0.4em;
+}
+
+.textAreaOfNote {
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 1em;
+    background-color: rgba(216, 194, 168, 0.3);
+    border-radius: 0 0 16px 16px;
+}
+
+.form > button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 300;
+    background-color: rgba(230, 127, 119);
+    font-size: 1.2em;
+    color: white;
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.5em;
+}
+
+.form > button:hover , .form > button:focus{
+    background-color: rgba(231, 88, 82);
+    box-shadow: 0 0.5em 1em rgba(231, 88, 82, 0.4);
+    outline: none;
+}
+
+.buttonGroup {
+    display: flex;
+    width: max-content;
+    gap: 0.2em;
+    width: 100%;
+}
+
+.buttonGroup > button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 300;
+    font-size: 1.2em;
+    background-color: rgba(216, 194, 168, 1);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5em;
+    flex: 1;
+}
+
+.buttonGroup > button:hover {
+    background-color: rgba(231, 88, 82);
+    box-shadow: 0 0.5em 1em rgba(231, 88, 82, 0.4);
+    outline: none;
+    color: white;
+}
+
+
+
+.buttonGroup .redColor {
+    background-color: rgba(230, 127, 119);
+    color: white;
+}
