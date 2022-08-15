@@ -6,7 +6,7 @@
   color: rgb(var(--secondaryColor2));
   display: flex;
   width: 16em;
-  min-height: max(8rem,100%);
+  min-height: auto;
 }
 
 .eachNoteStyle:hover {
